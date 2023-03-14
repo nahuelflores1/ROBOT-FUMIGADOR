@@ -19,6 +19,9 @@ body {
     font-family: 'Oswald', sans-serif;
     color: aliceblue;
     font-size: 30px;
+    margin-bottom: 10vh;
+    
+    
 }
 
 .text {
@@ -31,4 +34,32 @@ body {
     align-items: center;
     display: flex;
     color: white;
+}
+
+.BotN1:hover , .BotN1:focus, .BotN2:hover , .BotN2:focus, .BotN3:hover , .BotN3:focus, .BotN4:hover , .BotN4:focus, .BotN5:hover , .BotN5:focus{
+    background-size: 100% 2px;
+}
+
+.BotN1, .BotN2, .BotN3, .BotN4, .BotN5{
+    text-decoration: none;
+    background-image: linear-gradient(pink, pink);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+        
+}
+
+.BotN1 a, .BotN2 a, .BotN3 a , .BotN4 a, .BotN5 a{
+    color: white;
+    text-decoration: none;
+}
+
+.FotitoS{
+    color:white;
+    margin-left: 10px;
+}
+
+.giticono{
+    justify-items: end;
 }
