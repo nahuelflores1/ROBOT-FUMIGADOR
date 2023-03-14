@@ -60,6 +60,36 @@ body {
     margin-left: 10px;
 }
 
-.giticono{
-    justify-items: end;
+#Robots{
+    text-decoration: none;
+    background-color: none;
 }
+
+.dropdown-li{
+    position: relative;
+  }
+  
+  .dropdown-li:hover .dropdown {
+    display: block;
+    opacity: 1;
+  }
+  
+  .dropdown {
+    background-color: slateblue;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+  
+    opacity: 0; 
+    display: none;
+  }
+  
+  .dropdown li {
+    list-style: none;
+    text-decoration:none;
+    background-color: rgb(255, 255, 255);
+  
+  }
