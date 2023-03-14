@@ -19,14 +19,11 @@ body {
     font-family: 'Oswald', sans-serif;
     color: aliceblue;
     font-size: 30px;
-    margin-bottom: 10vh;
     
     
 }
 
-.text {
-    margin-right: 10%;
-}
+
 
 .map-text {
     flex-direction: row-reverse;
@@ -55,41 +52,56 @@ body {
     text-decoration: none;
 }
 
-.FotitoS{
-    color:white;
-    margin-left: 10px;
-}
 
 #Robots{
     text-decoration: none;
     background-color: none;
 }
 
-.dropdown-li{
-    position: relative;
-  }
+nav{
+    width:max-content ;
+    font-size: 20px;
+
+
+}
   
-  .dropdown-li:hover .dropdown {
-    display: block;
-    opacity: 1;
-  }
-  
-  .dropdown {
-    background-color: slateblue;
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    width: 100%;
+    
+}
+
+
+.menu-horizontal, li, a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu-horizontal, li:hover{
+    color: rgb(0, 0, 0);
+}
+.menu-vertical{
     position: absolute;
-    left: 0;
-    top: 100%;
-  
-    opacity: 0; 
     display: none;
-  }
-  
-  .dropdown li {
     list-style: none;
-    text-decoration:none;
-    background-color: rgb(255, 255, 255);
-  
-  }
+    width: 200px;
+    background-color: rgb(65, 65, 65);
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+
