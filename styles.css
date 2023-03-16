@@ -9,99 +9,102 @@ body {
 }
 
 #map {
-    height: 300px;
-    width: 600px;
+    height: 100px;
+    width: 100px;
 
 }
 
-.titulo {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    color: aliceblue;
-    font-size: 30px;
-    
-    
-}
-
-
-
-.map-text {
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
+header{
     display: flex;
-    color: white;
+    justify-content: end;
+    
+
+    padding: 5px;
 }
 
-.BotN1:hover , .BotN1:focus, .BotN2:hover , .BotN2:focus, .BotN3:hover , .BotN3:focus, .BotN4:hover , .BotN4:focus, .BotN5:hover , .BotN5:focus{
-    background-size: 100% 2px;
-}
-
-.BotN1, .BotN2, .BotN3, .BotN4, .BotN5{
-    text-decoration: none;
-    background-image: linear-gradient(pink, pink);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-        
-}
-
-.BotN1 a, .BotN2 a, .BotN3 a , .BotN4 a, .BotN5 a{
-    color: white;
-    text-decoration: none;
-}
-
-
-#Robots{
-    text-decoration: none;
-    background-color: none;
-}
-
-nav{
-    width:max-content ;
+.lista_nav{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    flex-direction: column;
     font-size: 20px;
+    justify-items: left;
 
-
-}
   
-
-.menu-horizontal{
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
     
 }
 
-
-.menu-horizontal, li, a{
-    display: block;
-    color: rgb(255, 255, 255);
+.lista_nav li a{
     text-decoration: none;
+    color: bisque;
 }
 
-.menu-horizontal, li:hover{
-    color: rgb(0, 0, 0);
+.abrir_menu, .cerrar_menu{
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
 }
-.menu-vertical{
+
+.nav{
+
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    display: none;
-    list-style: none;
-    width: 200px;
-    background-color: rgb(65, 65, 65);
-
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0,0 ,0 , .5);
 }
 
-.menu-horizontal li:hover .menu-vertical{
-    display: block;
+.nav_visible{
+    opacity: 1;
+    visibility: visible;
 }
 
-.menu-vertical li a{
-    display: block;
-    color: white;
-    padding: 15px 15px 15px 20px;
-    text-decoration: none;
+
+
+.menuicon{
+    width: 45px;
+}
+
+.cerrar_menu{
+    justify-content: end;
+}
+
+.titulo{
+    color: bisque;
+    text-align: center;
+}
+
+.titulo_estados{
+    color: bisque;
+    margin-left: 5%;
+    
+    
+}
+
+.div_estados{
+    box-shadow: 1px 1px 1px 1px white;
+}
+
+.div_Titulo_estados{
+    background-color: #B48177;
+}
+
+
+table, th, td{
+    color: bisque;
+    border-collapse: collapse;
+    
+}
+
+th, td{
+    padding: 30px;
+    align-items: center;
 }
 
 

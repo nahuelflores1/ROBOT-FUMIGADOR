@@ -1,4 +1,4 @@
-var map = L.map('map').setView([-34.6376632,-58.6189009], 12);
+/*var map = L.map('map').setView([-34.6376632,-58.6189009], 12);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -20,3 +20,20 @@ var customIcon = new L.Icon({
 
 var marker = L.marker([-34.6376632,-58.6189009], {icon:customIcon},{alt: 'Kyiv'})
 marker.addTo(map);
+*/
+
+//Boton de menu
+
+const nav  = document.querySelector("nav");
+const abrir  = document.getElementById("abrir");
+const cerrar  = document.getElementById("cerrar");
+
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("nav_visible");
+    console.log("hola")
+})
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("nav_visible");
+})
