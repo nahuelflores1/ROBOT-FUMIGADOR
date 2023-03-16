@@ -2,23 +2,26 @@
 
 * {
     font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
 
 body {
     background-color: rgb(44, 39, 39);
+    
+    
 }
 
 #map {
-    height: 100px;
-    width: 100px;
+    margin-top: 200px;
+    height: 300px;
+    width: 700px;
+    margin-left: 23%;
 
 }
 
 header{
     display: flex;
     justify-content: end;
-    
-
     padding: 5px;
 }
 
@@ -27,11 +30,7 @@ header{
     list-style-type: none;
     gap: 2rem;
     flex-direction: column;
-    font-size: 20px;
-    justify-items: left;
-
-  
-    
+    font-size: 20px;  
 }
 
 .lista_nav li a{
@@ -71,20 +70,10 @@ header{
     width: 45px;
 }
 
-.cerrar_menu{
-    justify-content: end;
-}
-
-.titulo{
-    color: bisque;
-    text-align: center;
-}
 
 .titulo_estados{
     color: bisque;
     margin-left: 5%;
-    
-    
 }
 
 .div_estados{
@@ -104,7 +93,13 @@ table, th, td{
 
 th, td{
     padding: 30px;
-    align-items: center;
 }
 
 
+.titulo_map{
+    color: bisque;
+    font-size: 40px;
+
+    border-bottom: 1px solid gray;
+    width: 100px;
+}
