@@ -1,99 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
-
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>EL CHAQUE</title>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/ef310522d5.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-
-
-  <header>
-    <button class="abrir_menu" id="abrir"><img src="menu.svg" alt="" class="menuicon"></button>
-    <nav class="nav" id="nav">
-    <button class="cerrar_menu" id="cerrar"><img src="menu.svg" alt=""></button>
-      <ul class="lista_nav">
-        <li><a href="#">Estados</a></li>
-        <li><a href="#">Mapa</a></li>
-        <li><a href="#">Fotos</a></li>
-        <li><a href="#"></a></li>
-      </ul>
-
-    </nav>
-  </header>
-
-
-  <div class="div_estados">
-    <div class="div_Titulo_estados">
-     <h2 class="titulo_estados">Estados</h2>
+  <div class="sidebar">
+    <img class="logo-img" src="./img/robot-icon.png" alt="">
+    <div class="logo-details">
+      <div class="logo_name">El Chaque</div>
+      <i class='bx bx-menu' id="btn"></i>
     </div>
-    
-    <table>
-      <tr>
-          <th>Nombre</th>
-          <th>Estados</th>
-          <th>Bateria</th>
-          <th>Tiempo Recorrido</th>
-      </tr>
-      <tr>
-        <td>Robot N°1</td>
-        <td>En Funcionamiento</td>
-        <td>100%</td>
-        <td>1h 20min</td>
-      </tr>
-
-      <tr>
-        <td>Robot N°2</td>
-        <td>En Funcionamiento</td>
-        <td>70%</td>
-        <td>1h 40min</td>
-      </tr>
-
-      <tr>
-        <td>Robot N°3</td>
-        <td>Ausente</td>
-        <td>50%</td>
-        <td>2h 40min</td>
-      </tr>
-
-    </table>
+    <ul class="nav-list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Buscar...">
+        <span class="tooltip">BUSCAR</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-house"></i>
+          <span class="links_name">INICIO</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-robot"></i>
+          <span class="links_name">ROBOT</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span class="links_name">UBICACION</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-globe"></i>
+          <span class="links_name">TELEMETRIA</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-folder"></i>
+          <span class="links_name">DATOS RECIBIDOS</span>
+        </a>
+      </li>
+    </ul>
   </div>
-
-  <h1 class="titulo_map">Mapa</h2>
-
-
-
-  <main> 
-    <div class="map-text">
-        <div id="map"></div>
-
-    </div>
+  <main class="home-section">
+    <img src="./img/robot-icon.png" alt="">
   </main>
 
-
-
-
-
-
- 
-  
-
-
-
+  <script src="./js/script.js"></script>
 
 </body>
-<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
 
 </html>
