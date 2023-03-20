@@ -200,3 +200,10 @@
     }
 }
 
+.sidebar.open li a:hover > .links_name{
+    color: black;
+}
+
+.sidebar.open li a:hover > i{
+    color: black;
+}

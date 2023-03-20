@@ -180,6 +180,12 @@
   .sidebar li .tooltip {
     display: none; } }
 
+.sidebar.open li a:hover > .links_name {
+  color: black; }
+
+.sidebar.open li a:hover > i {
+  color: black; }
+
 .container {
   background-color: black; }
   .container .row {
