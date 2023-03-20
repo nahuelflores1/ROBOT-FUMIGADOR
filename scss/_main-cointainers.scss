@@ -1,0 +1,15 @@
+.container {
+    background-color: black;
+    .row {
+        height: 280px;
+        padding: 5px;
+        .col-6 {
+            border: 1px solid black;
+            background: lightgray;
+            h2 {
+                font-size: 20px;
+                padding: 9px 0px;
+            }
+        }
+    }
+}

@@ -7,15 +7,8 @@
     top: 0;
     height: 100%;
     width: 78px;
-    background-image: linear-gradient(
-        to right top,
-        #071d3f,
-        #084156,
-        #3c6466,
-        #72847b,
-        #a4a69f
-    );
-    padding: 6px 14px;
+    background-image: linear-gradient(to right top, #071d3f, #084156, #3c6466, #72847b, #a4a69f);
+    padding: 0px 14px;
     z-index: 99;
     transition: all 0.5s ease;
     .logo-img {
@@ -52,13 +45,14 @@
         color: #fff;
         height: 60px;
         min-width: 50px;
-        font-size: 23px;
+        font-size: px;
         text-align: center;
         line-height: 60px;
     }
-    .nav-list {
+    .nav-list-bar {
         margin-top: 20px;
         height: 100%;
+        padding-left: 0rem;
     }
     li {
         position: relative;
@@ -108,14 +102,10 @@
                 pointer-events: none;
                 transition: 0.4s;
             }
-            &:hover {
-                i {
-                }
-            }
         }
     }
     input {
-        font-size: 15px;
+        font-size: 0px;
         color: #fff;
         font-weight: 400;
         outline: none;
@@ -133,7 +123,6 @@
         left: 0;
         transform: translateY(-50%);
         font-size: 22px;
-        background: #08364e84;
         color: #fff;
         border-radius: 15px;
         align-items: center;
@@ -142,7 +131,7 @@
         justify-content: center;
         &:hover {
             background: #fff;
-            color:#08364e84;
+            color: #08364e84;
         }
     }
 }
@@ -163,8 +152,10 @@
     display: none;
 }
 .sidebar.open input {
+    font-size: 15px;
     padding: 0 20px 0 50px;
     width: 100%;
+    transition: all 0.5s ease;
 }
 .sidebar.open .bx-search:hover {
     background: #1d1b31;
@@ -176,13 +167,16 @@
 }
 .home-section {
     position: relative;
-    background: #e4e9f7;
+    background: #7bb19a77;
     min-height: 100vh;
     top: 0;
     left: 78px;
     width: calc(100% - 78px);
     transition: all 0.5s ease;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sidebar.open ~ .home-section {
     left: 250px;
